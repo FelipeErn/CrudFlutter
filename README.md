@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CRUD Flutter
 
 Este é um projeto desenvolvido para uma atividade acadêmica de faculdade. O projeto é uma aplicação Flutter que implementa um CRUD (Criar, Ler, Atualizar, Deletar) simples. O sistema gerencia informações de usuários, como nome e e-mail, e oferece funcionalidades para adicionar, visualizar, editar e remover usuários.
@@ -37,3 +38,6 @@ Para rodar o aplicativo Flutter:
 
    ```bash
    git clone https://github.com/FelipeErn/CrudFlutter.git
+=======
+# CrudFlutter
+>>>>>>> 5e372afc7fbb4d6a66a91101e3031b848ceca64d
