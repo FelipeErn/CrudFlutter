@@ -1,16 +1,20 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const weatherRoutes = require('./routes/weather');
+const usuariosRoutes = require('./routes/usuarios'); // Adicionar esta linha para importar as rotas de usuários
 const pool = require('./config/db');
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
+
+const cors = require('cors');
+app.use(cors());
 
 app.use(express.json());
 
-app.use('/api/weather', weatherRoutes);
+// Definindo as rotas
+app.use('/api/usuarios', usuariosRoutes); // Adicionar esta linha para definir a rota de usuários
 
 pool.connect((err) => {
   if (err) {
